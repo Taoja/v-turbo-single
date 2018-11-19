@@ -119,4 +119,16 @@ body{
   -webkit-animation-name: slideOutRight2;
   animation-name: slideOutRight2;
 }
+
+.animated.faster {
+  -webkit-animation-duration: 500ms;
+  animation-duration: 500ms;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
 </style>
