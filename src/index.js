@@ -14,8 +14,6 @@ import {
   tInput,
   tButton
 } from 'components'
-import '@j/App'
-import '@s'
 
 Vue.component('tPage', tPage)
 Vue.component('tHeader', tHeader)
