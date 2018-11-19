@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport">
+  <meta content="telephone=no" name="format-detection">
+  <script type="text/javascript">
+    (function (doc, win) {
+      var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+          var clientWidth = docEl.clientWidth;
+          docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+        };
+      if (!doc.addEventListener) {
+        return;
+      }
+      win.addEventListener(resizeEvt, recalc, false);
+      doc.addEventListener('DOMContentLoaded', recalc, false);
+      recalc()
+    })(document, window)
+  </script>
+  <script src="./static/echarts.min.js"></script>
+  <script src="./static/bScroll.min.js"></script>
+  <script src="./static/vue.min.js"></script>
+  <script src="./static/director.min.js"></script>
+  <script src="./static/vuex.min.js"></script>
+  <script src="./static/iconfont.js"></script>
+  <link rel="stylesheet" href="./static/animation.min.css">
+  <link rel="stylesheet" href="./static/iconfont.css">
+  <title></title>
+</head>
+
+<body>
+  <div id="entry"></div>
+  <script type="text/javascript" src="js/components.js"></script>
+  <script type="text/javascript" src="js/stores.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
