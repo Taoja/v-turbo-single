@@ -129,6 +129,12 @@ const options = {
         }
       },
       {
+        test: resolve('/src/router/index.js'),
+        use: {
+          loader: './build/routerLoader.js',
+        } 
+      },
+      {
         test: /src[\/|\\]modules[\/|\\][_a-zA-Z0-9]+[\/|\\][_a-zA-Z0-9]+[\/|\\][_a-zA-Z0-9]+[\/|\\]index.js/,
         use: {
           loader: './build/pagesLoader.js',

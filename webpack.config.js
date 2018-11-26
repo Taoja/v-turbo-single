@@ -19,7 +19,7 @@ const config = {
     externals: {
       'vue': 'window.Vue',
       'vuex': 'window.Vuex',
-      'Router': 'window.Router'
+      'vue-router': 'window.VueRouter'
     },
     env: {
       sit: {

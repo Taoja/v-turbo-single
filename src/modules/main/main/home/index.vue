@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div>{{msg}}</div>
+    <div @click="goDemo">{{msg}}</div>
     <div>{{msg2}}</div>
   </div>
 </template>
@@ -11,6 +11,11 @@ export default {
     return {
       msg: Global.host,
       msg2: ENV.mpaas_domainName
+    }
+  },
+  methods: {
+    goDemo () {
+      this.$router.push('/demo/demo/index')
     }
   }
 }

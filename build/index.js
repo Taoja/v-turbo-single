@@ -54,9 +54,10 @@ function startWebpack () {
 function resetOptions (md, env) {
   var pl = packageList(md)
   options.entry = pl
-  options.externals.routes = JSON.stringify(pages)
+  options.externals.pages = JSON.stringify(pages)
   options.externals.components = 'window.__components'
   options.externals.stores = 'window.__stores'
+  options.externals.routes = 'window.__routes'
   options.plugins.push(
     new CopyWebpackPlugin([
       { 

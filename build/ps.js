@@ -16,6 +16,7 @@ const packageList = function (e) {
   })
 
   package['js/stores'] = resolve('src/store/index.js')
+  package['js/routes'] = resolve('src/router/index.js')
   package['js/main'] = resolve('src/index.js')
   package['js/components'] = resolve('src/components/index.js')
   return package
