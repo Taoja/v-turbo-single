@@ -1,1 +1,5 @@
-module.exports = ['demo']
+module.exports = {
+  demo: {
+    index: {}
+  }
+}
