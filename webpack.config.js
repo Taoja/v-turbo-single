@@ -1,5 +1,4 @@
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
-const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const path = require('path')
 function resolve (e) {
@@ -44,16 +43,6 @@ const config = {
     },
     plugins: [
       new VueLoaderPlugin(), //vue加载器
-      new CopyWebpackPlugin([
-        { 
-          from: resolve('static'), 
-          to: resolve(`dist/static`)
-        },
-        { 
-          from: resolve('index.html'), 
-          to: resolve(`dist`)
-        }
-      ])
     ],
     loader: [
       {
@@ -69,18 +58,6 @@ const config = {
             ]
           }
         }]
-      },
-      {
-        test: /\.(jpg|png|svg|gif|jpeg)$/,
-        use: [
-          {
-            loader: 'url-loader', //url解析器
-            options: {
-              limit:10, // 是把小于500000B的文件打成Base64的格式，写入JS。
-              name: 'images/[name]-[hash].[ext]'
-            }
-          }
-        ]
       },
       {
         test: /\.stylus$/,
@@ -114,7 +91,8 @@ const config = {
     devtool: 'eval'
   },
   build: {
-    devtool: false
+    devtool: false,
+    limit: 1
   }
 }
 

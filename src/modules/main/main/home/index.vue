@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div @click="goDemo">{{msg}}</div>
+    <div @click="goDemo"><img src="@a/logo.png" alt=""></div>
     <div>{{msg2}}</div>
   </div>
 </template>
