@@ -2,8 +2,8 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import App from './App'
 import VueRouter from 'vue-router'
-import routes from 'routes'
-import stores from 'stores'
+import routes from './router'
+import stores from './store'
 
 Vue.use(Vuex)
 const store = new Vuex.Store(stores)

@@ -16,4 +16,4 @@ routes.push({
   redirect: '/main/main/home'
 })
 
-window.__routes = routes
+export default routes

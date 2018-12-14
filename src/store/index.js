@@ -9,4 +9,4 @@ const store = {
   }
 }
 
-window.__stores = store
+export default store
