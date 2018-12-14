@@ -1,19 +1,21 @@
-import pages from 'pages'
 import splitter from 'vue-splitter/bin/splitter'
 
-var routes = pages.map((a) => {
-  var path = a.package + '/' + a.module + '/' + a.page
-  return {
-    path: '/' + path,
-    name: path,
+var routes = [{
+    path: '/',
+    redirect: '/main/main/home'
+  },{
+    path: '/main/main/home',
+    name: '/main/main/home',
     component: () => {
-      return splitter(path)
+      return splitter('main/main/home')
+    }
+  },{
+    path: '/demo/demo/index',
+    name: '/demo/demo/index',
+    component: () => {
+      return splitter('demo/demo/index')
     }
   }
-})
-routes.push({
-  path: '/',
-  redirect: '/main/main/home'
-})
+]
 
 export default routes
