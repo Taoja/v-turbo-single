@@ -100,7 +100,7 @@ const config = {
   dev: {
     port: 8081,
     host: '0.0.0.0',
-    devtool: 'eval'
+    devtool: 'source-map'
   },
   build: {
     devtool: false
