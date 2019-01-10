@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "单页面分包工程",
   "scripts": {
-    "build": "node node_modules/vue-splitter single",
-    "dev": "node node_modules/vue-splitter single development cross-env NODE_ENV=development"
+    "build": "node node_modules/dividing single",
+    "dev": "node node_modules/dividing single development cross-env NODE_ENV=development"
   },
   "author": "黄武韬（346792184@qq.com）",
   "license": "ISC",
@@ -28,7 +28,7 @@
     "sass-loader": "^7.0.3",
     "style-loader": "^0.21.0",
     "vue-loader": "^15.4.2",
-    "vue-splitter": "latest",
+    "dividing": "latest",
     "vue-style-loader": "^4.1.1",
     "vue-template-compiler": "^2.5.16"
   }
