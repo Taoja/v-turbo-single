@@ -1,19 +1,13 @@
-import splitter from 'vue-splitter/bin/splitter'
+import splitter from 'dividing/bin/splitter'
 
 var routes = [{
     path: '/',
-    redirect: '/main/main/home'
+    redirect: '/hello/turbo/index'
   },{
-    path: '/main/main/home',
-    name: '/main/main/home',
+    path: '/hello/turbo/index',
+    name: '/hello/turbo/index',
     component: () => {
-      return splitter('main/main/home')
-    }
-  },{
-    path: '/demo/demo/index',
-    name: '/demo/demo/index',
-    component: () => {
-      return splitter('demo/demo/index')
+      return splitter('hello/turbo/index')
     }
   }
 ]

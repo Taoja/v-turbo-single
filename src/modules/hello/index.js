@@ -1,5 +1,5 @@
 module.exports = {
-  demo: {
+  turbo: {
     index: {}
   }
 }

@@ -25,21 +25,28 @@ const config = {
     },
     env: {
       sit: {
-        mpaas_domainName: 'cn-hangzhou-mdsweb.cloud.alipay.com',
-        mpaas_appId_workspaceId: '98F6BCD302124_sit',
+        env: 1
       },
       uat: {
-        mpaas_domainName: '112.72.12.31:80',
-        mpaas_appId_workspaceId: '98F6BCD302124_uat',
+        env: 2
       }
     },
-    packageID: {
-      static: 20180000,
-      base: 20180101,
-      main: 20180102
-    },
     global: {
-      host: 'http://cn-hangzhou-mdsweb.cloud.alipay.com'
+      FrameWork: {
+        Github: 'https://github.com/Taoja/v-turbo-single',
+        Issues: 'https://github.com/Taoja/v-turbo-single/issues',
+        Document: 'https://github.com/Taoja/v-turbo-single'
+      },
+      Bridge: {
+        Github: 'https://github.com/Taoja/v-turbo-bridge',
+        Issues: 'https://github.com/Taoja/v-turbo-bridge/issues',
+        Document: 'https://github.com/Taoja/v-turbo-bridge'
+      },
+      Turbo: {
+        Homepage: 'https://github.com/Taoja/v-turbo-single',
+        Desk: 'https://github.com/Taoja/v-turbo-single/issues',
+        Document: 'https://github.com/Taoja/v-turbo-single'
+      }
     },
     plugins: [
       new VueLoaderPlugin(), //vue加载器
@@ -100,7 +107,8 @@ const config = {
   dev: {
     port: 8081,
     host: '0.0.0.0',
-    devtool: 'source-map'
+    devtool: 'source-map',
+    open: '#/hello/turbo/index'
   },
   build: {
     devtool: false

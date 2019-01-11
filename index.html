@@ -4,22 +4,6 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport">
   <meta content="telephone=no" name="format-detection">
-  <script type="text/javascript">
-    (function (doc, win) {
-      var docEl = doc.documentElement,
-        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-        recalc = function () {
-          var clientWidth = docEl.clientWidth;
-          docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
-        };
-      if (!doc.addEventListener) {
-        return;
-      }
-      win.addEventListener(resizeEvt, recalc, false);
-      doc.addEventListener('DOMContentLoaded', recalc, false);
-      recalc()
-    })(document, window)
-  </script>
   <script src="./static/vue.min.js"></script>
   <script src="./static/vueRouter.min.js"></script>
   <script src="./static/vuex.min.js"></script>
