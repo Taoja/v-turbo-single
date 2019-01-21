@@ -1,5 +1,7 @@
 # v-turbo
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Taoja/v-turbo-single.svg)](https://greenkeeper.io/)
+
 ## 简介
 
 v-turbo基于目前前端社区最新的Vue.js 2.0及webpack 4.0搭建，针对turbo移动开发平台配套的离线更新、前端UI框架及原生Bridge进行了深度集成及优化。
